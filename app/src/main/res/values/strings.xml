@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Unsaidwish</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="tag">Join us and Make your wish fulfilled and delivered.</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="your_fname">First Name</string>
+    <string name="your_mname">Middle Name</string>
+    <string name="your_lname">Last Name</string>
+    <string name="read_file">This app needs access to your file storage so that it can read video.</string>
+
+    <string name="facebook_app_id">4193912934012128</string>
+    <string name="fb_login_protocol_scheme">fb4193912934012128</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Close</string>
+
+
+    <string name="about_us">
+
+        * Overview
+        \n\n<b>SICRAMA Infotech is a multicity, Agricultural Research Software development and Software Electronics based organization, in Nagpur and Pune, Maharashtra Which is having it\'s headquarter in Nagpur, Maharashtra. Specializing across various arenas of the IT and Electronic industry, SICRAMA Info Tech has skilled the craft in various technologies like Geographic Information System (GIS). Artificial Intelligence (Ai), Machine Learning (ML). Flutter Technology, Internet of Things (IOT) and many more. The unique commingle of in-depth domain understanding and insight with cutting edge technical competence gives SICRAMA Info Tech an upper hand to high quality services to our clients across the globe</b>\n\n
+
+        * Our Vision
+        \n\n<b>We share a vision of dedicating our intelligence and expertise to help create a world that is
+
+strengthen through Information Technology. This means inventing new technologies. As we
+
+continue to turn more successful and accomplished new height, we see ourselves support our customers to expedite their business through the application of innovative technologies. The presence of our vision lies in building strong and trustworthy relationships with its clients</b>
+
+        \n\n* Our Mission
+        \n\n<b>To achieve and maintain the confidence, trust and loyalty of our clients. Everything SICRAMA Info
+
+Tech has achieved and will achieve is due to the excellent and exceptional relationship it shares with
+
+its customer. We, at Sicrama Info Tech believe that these relationship are the company\'s most
+
+priceless and precious assets. With you, we create and deliver business and technology solutions
+
+that fit your needs and drive the results you want</b>
+
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

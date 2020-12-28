@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    tools:context=".InboxFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="#FFFFFF"
+        android:background="@drawable/toolbar_gradient"
+        app:titleMarginStart="30dp"
+        android:outlineSpotShadowColor="#FFFFFF"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left|center"
+            android:weightSum="5">
+
+
+            <ImageView
+                android:id="@+id/back_user_inbox"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_message_black_24dp"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4.0"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ListView
+        android:id="@+id/user_inbox_list"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:scrollbars="none"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_height="match_parent"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView_userinbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/message"
+        android:visibility="visible"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+</LinearLayout>

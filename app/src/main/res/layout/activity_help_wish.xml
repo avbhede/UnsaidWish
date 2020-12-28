@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:weightSum="2"
+    android:layout_height="match_parent"
+    tools:context=".Camera">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <VideoView
+                android:id="@+id/preview"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_uploadGlobal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/btn_custome"
+        android:backgroundTint="#FD4080"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:text="Upload"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="Remove"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@id/et_email"/>
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="-22dp"
+        android:background="#FFFFFF"
+        android:layout_gravity="center">
+    </View>
+
+
+</LinearLayout>

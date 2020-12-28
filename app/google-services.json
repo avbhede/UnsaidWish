@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "817008927325",
+    "firebase_url": "https://unsaid-wish-d2a12.firebaseio.com",
+    "project_id": "unsaid-wish-d2a12",
+    "storage_bucket": "unsaid-wish-d2a12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817008927325:android:41546c747ae0363573e3b4",
+        "android_client_info": {
+          "package_name": "com.av.uwish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817008927325-e1ctrn60n7p3hdkntpk040h4ko0617t8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.av.uwish",
+            "certificate_hash": "1a5cc38042c9cbb1fb0ba28e3ef1dd52e6262fd0"
+          }
+        },
+        {
+          "client_id": "817008927325-et861ndjesrdg884muk9o98i3duculj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLxpCXr0_gHUoYVyNEk8EOrQz4uK6uGF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817008927325-et861ndjesrdg884muk9o98i3duculj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

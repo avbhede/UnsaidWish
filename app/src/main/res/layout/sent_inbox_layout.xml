@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="3dp"
+    android:layout_height="wrap_content">
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="10dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="5dp"
+    android:padding="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="4">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/unsaid_logo"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3.0"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reciever name"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:padding="5dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/wish_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wish Type"
+                android:textColor="#520260"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/datetime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.8"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="July 21st 2020 09:09 AM"
+                    android:padding="5dp"/>
+
+
+                <TextView
+                    android:id="@+id/status_yes"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.2"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    android:gravity="right|center"
+                    android:textColor="#06630A"
+                    android:text="Delivered"
+                    android:paddingVertical="5dp"/>
+
+
+                <TextView
+                    android:id="@+id/status_no"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.2"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#F44336"
+                    android:text="Waiting"
+                    android:gravity="right|center"
+                    android:paddingVertical="5dp"/>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:text="July 21st 2020 09:09 AM"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:text="July 21st 2020 09:09 AM"
+                android:padding="5dp"/>
+
+
+            <TextView
+                android:id="@+id/videolink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:text="July 21st 2020 09:09 AM"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>

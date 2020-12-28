@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".Camera">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="#FFFFFF"
+        android:background="@drawable/toolbar_gradient"
+        app:titleMarginStart="30dp"
+        android:outlineSpotShadowColor="#ffffff"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left|center"
+            android:weightSum="5">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="0.3"
+                android:src="@drawable/unsaid_logo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.7"
+                android:text="Unsaid Wish"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1.0"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <VideoView
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/btn_custome"
+        android:backgroundTint="#FD4080"
+        android:fontFamily="sans-serif-light"
+        android:text="Select from Gallery "
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_above="@id/et_email"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.1"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="or"
+        android:textStyle="italic"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/btn_shoot"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/btn_custome"
+        android:backgroundTint="#FD4080"
+        android:fontFamily="sans-serif-light"
+        android:text="Shoot A Video "
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+
+
+    <Button
+        android:id="@+id/btn_uploadGlobal"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/upload_btn_back"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:text="Upload "/>
+
+</LinearLayout>

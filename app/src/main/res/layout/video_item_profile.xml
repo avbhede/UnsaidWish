@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:layout_marginVertical="5dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewid"
+        android:layout_width="170dp"
+        app:cardBackgroundColor="#0C373131"
+        app:cardCornerRadius="1dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C373131"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/video_grid"
+                android:layout_width="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/unsaid_logo"
+                android:layout_height="180dp"/>
+
+
+            <TextView
+                android:id="@+id/wish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wish Name"
+                android:visibility="gone"
+                android:padding="2dp"
+                android:layout_marginLeft="3dp"
+                android:gravity="left"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"/>
+
+
+            <TextView
+                android:id="@+id/likes"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="8dp"
+                android:layout_marginLeft="3dp"
+                />
+
+
+            <TextView
+                android:id="@+id/dislikes"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="8dp"
+                android:layout_marginLeft="3dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/video_date"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="8dp"
+                android:layout_marginLeft="3dp"
+                />
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="8dp"
+                android:layout_marginLeft="3dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

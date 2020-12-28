@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:id="@+id/cardinbox"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:padding="10dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="4">
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/v1"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/ic_radio_button"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3.0"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/post_uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sender name"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:padding="5dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/wish_typetv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wish Type"
+                android:textColor="#520260"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/post_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.0"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="July 21st 2020 09:09 AM"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/status_yes"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    android:textColor="#06630A"
+                    android:text="Delivered"
+                    android:textStyle="bold"
+                    android:padding="5dp"/>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:text="July 21st 2020 09:09 AM"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:text="July 21st 2020 09:09 AM"
+                android:padding="5dp"/>
+
+
+            <TextView
+                android:id="@+id/videolink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:text="July 21st 2020 09:09 AM"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>

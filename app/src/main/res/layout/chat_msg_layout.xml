@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/sent_msg_layout"
+    android:visibility="gone"
+    android:background="#00000000"
+    android:padding="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/text_send_msg_body"
+        android:text="hello, hello!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:background="@drawable/chatsbackground"
+        android:backgroundTint="#C8B5CD"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_send_msg_time"
+        android:text="11:40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginRight="4dp"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/text_send_msg_body"
+        app:layout_constraintRight_toLeftOf="@+id/text_send_msg_body" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rec_msg_layout"
+        android:background="#00000000"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+
+        <TextView
+            android:id="@+id/text_rec_msg_name"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/text_rec_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/chatsbackground"
+            android:backgroundTint="#F1D5D5"
+            android:maxWidth="240dp"
+            android:padding="8dp"
+            android:text="hi man, how are you?"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_rec_msg_name"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_rec_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="38dp"
+            android:text="11:40"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/text_rec_msg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
